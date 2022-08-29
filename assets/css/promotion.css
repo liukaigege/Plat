@@ -1,0 +1,234 @@
+@import "./header.css";
+
+.plat-section-banner {
+    height: 640px;
+    position: relative;
+}
+
+.plat-section-banner .banner-img {
+    filter: brightness(0.8);
+}
+
+.plat-section-banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 1200px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 1;
+}
+
+.banner-text .title {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 600;
+}
+
+.banner-text .sub {
+    line-height: 25px;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.plat-section-target {
+    padding: 80px 32px;
+    background: linear-gradient(180deg, #fff 0, #f7f9fc 100%), linear-gradient(180deg, #fff 0, #f7f9fc 100%);
+}
+
+.release-title,
+.target-title {
+    text-align: center;
+}
+
+.release-title .title,
+.target-title .title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 500;
+    color: #313233;
+}
+
+.release-title .sub,
+.target-title .sub {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 29px;
+    color: #626366;
+}
+
+.target-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.target-list .target-list-item {
+    position: relative;
+    width: 25%;
+    pointer-events: none;
+    overflow: hidden;
+    background: no-repeat center center/cover;
+    height: 300px;
+}
+
+.target-list-item .mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    font-size: 0;
+    overflow: hidden;
+    text-align: center;
+    line-height: 80px;
+    background: #f2f7ff;
+}
+
+.target-list-item .icon-box {
+    position: relative;
+    bottom: -20px;
+    transition: .5s;
+    opacity: 0;
+    z-index: 3;
+}
+
+.target-list-item .icon-box.ani {
+    opacity: 1;
+    bottom: 0;
+}
+
+.target-list-item:nth-child(1) .icon-box.ani {
+    transition-delay: .1s;
+}
+
+.target-list-item .icon-box .icon {
+    width: 32px;
+    margin-right: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.target-list-item .icon-box .label {
+    font-size: 24px;
+    color: #313233;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.target-list-item .mask .filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-filter: blur(120px) brightness(120%);
+    filter: blur(120px) brightness(120%);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 2;
+    margin: -30px;
+    transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+}
+
+.plat-section-release {
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.plat-section-release .release-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 18px auto 0;
+}
+
+.release-list .release-list-item {
+    width: 32%;
+    margin-top: 30px;
+    border: 1px solid #dfe1e6;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 45px;
+    transition: .3s;
+    pointer-events: none;
+}
+
+.release-list .release-list-item+.release-list-item {
+    margin-left: 2%;
+}
+
+.release-list .release-list-item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.release-list-item .label {
+    line-height: 34px;
+}
+
+.release-list-item .label .icon {
+    float: left;
+    margin-right: 16px;
+    width: 34px;
+}
+
+.release-list-item .label .text {
+    color: #313233;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.release-list-item .value {
+    padding-left: 50px;
+    color: #626366;
+    line-height: 30px;
+    font-size: 16px;
+    margin-top: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    height: 90px;
+}
+
+.release-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f9fc;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.release-line i {
+    position: absolute;
+    left: 50%;
+    width: 568px;
+    height: 1200px;
+    background: url(../images/line-bg.png) no-repeat center;
+    background-size: 100% 100%;
+    display: block;
+}
+
+.release-line .line1 {
+    bottom: 385px;
+    top: auto;
+    margin-left: -500px;
+}
+
+.release-line .line2 {
+    top: 40%;
+    bottom: auto;
+    margin-left: -65px;
+}

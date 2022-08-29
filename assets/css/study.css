@@ -1,0 +1,119 @@
+.study_image {
+  width: 100%;
+  display: block;
+}
+
+.study_container {
+  margin: 50px auto;
+}
+
+.container_list {
+  display: flex;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.container_list:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2)
+}
+
+.list_left {
+  width: 315px;
+  height: 216px;
+}
+
+.list_content {
+  box-sizing: border-box;
+  padding: 5px 30px;
+  width: 1150px;
+}
+
+.list_content h4 {
+  font-size: 24px;
+  color: #787878;
+  line-height: 60px;
+}
+
+.list_content .author_container {
+  font-size: 16px;
+  line-height: 32px;
+  color: #aaa;
+}
+
+.list_content .content_container {
+  font-size: 16px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.list_content .time_container {
+  font-size: 16px;
+  color: #888;
+  margin-top: 10px;
+  text-align: right;
+}
+.list_content .time_container img{
+  height: auto;
+  width: auto;
+}
+
+.loading_container {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.loading_btn {
+  background-image: -webkit-linear-gradient(left, red, orange, yellow, green, lightgreen, blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.loading_btn:hover {
+  background-image: -webkit-linear-gradient(right, red, orange, yellow, green, lightgreen, blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.textColor {
+  animation: textColor 3s infinite;
+  -moz-animation: textColor 3s infinite;
+  -webkit-animation: textColor 3s infinite;
+  -o-animation: textColor 3s infinite;
+}
+
+@keyframes textColor {
+  0% {
+    background-image: -webkit-linear-gradient(left, red, orange, yellow, green, lightgreen, blue, purple);
+  }
+
+  14% {
+    background-image: -webkit-linear-gradient(left, orange, yellow, green, lightgreen, blue, purple, red);
+  }
+
+  28% {
+    background-image: -webkit-linear-gradient(left, yellow, green, lightgreen, blue, purple, red, orange);
+  }
+
+  42% {
+    background-image: -webkit-linear-gradient(left, green, lightgreen, blue, purple, red, orange, yellow);
+  }
+
+  56% {
+    background-image: -webkit-linear-gradient(left, lightgreen, blue, purple, red, orange, yellow, green);
+  }
+
+  70% {
+    background-image: -webkit-linear-gradient(left, blue, purple, red, orange, yellow, green, lightgreen);
+  }
+
+  84% {
+    background-image: -webkit-linear-gradient(left, purple, red, orange, yellow, green, lightgreen, blue);
+  }
+
+  100% {
+    background-image: -webkit-linear-gradient(left, red, orange, yellow, green, lightgreen, blue, purple);
+  }
+}

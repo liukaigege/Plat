@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安徽省独立站公共服务平台-学习中心</title>
+  <script src="../assets/js/tool.js"></script>
+  <script>
+    const cssList = ['main', 'header', 'studydetail']
+    renders.css(cssList)
+  </script>
+</head>
+
+<body>
+  <header class="plat-header">
+      <div class="plat-header-logo container">安徽省独立站公共服务平台</div>
+      <div class="plat-header-list" id="platHeader">
+      </div>
+  </header>
+  <img class="study_image">
+  <div class="container study_container">
+    <h1 class="detail_title"></h1>
+    <p class="detail_tips"></p>
+    <div class="detail_content"></div>
+    <ul class="detail_list_container"></ul>
+  </div>
+  <footer class="plat-footer" id="platFooter"></footer>
+
+  <script type="text/html" id="studyDetailTpl">
+		{{each detail as v i}}
+        {{ if v.type == 3  }}
+        <li class="list_img">
+          <img src="{{v.text}}" alt="{{v.text}}">
+        </li>
+        {{ else  }}
+        <li class="container_list {{v.type == 1 ? 'list_text' : v.type == 2 ? 'list_title' : v.type == 3 ? 'list_img' : v.type == 4 ? 'list_q' : v.type == 5 ? 'list_a' : ''}}">
+          {{v.text}}
+        </li>
+        {{ /if }}
+      
+		{{/each}}
+	</script>
+  <script src="../lib/jquery.min.js"></script>
+  <script src="../lib/template.js"></script>
+  <script>
+    const jsList = ['header', 'studydetail']
+    renders.js(jsList)   
+  </script>
+</body>
+
+</html>
+

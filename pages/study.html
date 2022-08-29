@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安徽省独立站公共服务平台-学习中心</title>
+  <script src="../assets/js/tool.js"></script>
+  <script>
+    const cssList = ['main', 'header', 'study']
+    renders.css(cssList)
+  </script>
+</head>
+
+<body>
+  <header class="plat-header">
+      <div class="plat-header-logo container">安徽省独立站公共服务平台</div>
+      <div class="plat-header-list" id="platHeader">
+      </div>
+  </header>
+  <img class="study_image">
+  <ul class="container study_container">
+
+  </ul>
+  <!-- <div class="loading_container">
+    <span class="loading_btn">加载更多...</span>
+  </div> -->
+  <footer class="plat-footer" id="platFooter"></footer>
+  <script type="text/html" id="studyTpl">
+		{{each list as v i}}
+      <li class="container_list" data-id="{{v.id}}">
+        <div class="list_left" style="background: url({{v.image}}) 0 0 / 100% 100% no-repeat;"></div>
+        <div class="list_content">
+          <h4>{{v.title}}</h4>
+          <p class="author_container">{{v.author}}</p>
+          <p class="content_container">{{v.content}}</p>
+          <p class="time_container"><img src="../assets/images/icon1.png" alt=""> <span>{{v.time}}</span></p>
+        </div>
+      </li>
+		{{/each}}
+	</script>
+
+  <script src="../lib/jquery.min.js"></script>
+  <script src="../lib/template.js"></script>
+  <script>
+    const jsList = ['header', 'study']
+    renders.js(jsList)   
+  </script>
+</body>
+
+</html>

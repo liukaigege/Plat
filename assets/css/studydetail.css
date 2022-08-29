@@ -1,0 +1,68 @@
+.detail_list_container {
+  min-height: 80vh;
+  margin-bottom: 20px;
+}
+
+.study_image {
+  width: 100%;
+  display: block;
+}
+
+.list_text {
+  text-indent: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.list_title {
+  margin-bottom: 20px;
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+.list_img {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.list_img img {
+  max-width: 60%;
+  width: auto;
+}
+
+.list_q {
+  margin-top: 20px;
+  color: #333;
+}
+
+.list_a {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.detail_title {
+  font-size: 32px;
+  color: #111;
+  line-height: 80px;
+  margin-top: 20px;
+}
+
+.detail_tips {
+  font-size: 16px;
+}
+
+.detail_tips span {
+  margin-right: 10px;
+  color: #E89431;
+}
+
+.detail_content {
+  background-color: #F5F6F9;
+  text-indent: 2em;
+  border-radius: 4px;
+  margin: 30px 0;
+  box-sizing: border-box;
+  padding: 30px;
+  color: #666;
+}

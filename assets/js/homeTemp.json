@@ -1,0 +1,266 @@
+{
+  "home": {
+    "navList": [
+      {
+        "name": "首页",
+        "hrefUrl": "index.html",
+        "children": [
+          {
+            "name": "平台公告",
+            "hrefUrl": "index.html"
+          }
+        ]
+      },
+      {
+        "name": "建站服务",
+        "hrefUrl": "index.html"
+      },
+      {
+        "name": "广告推广",
+        "hrefUrl": "index.html"
+      },
+      {
+        "name": "跨境支付",
+        "hrefUrl": "index.html"
+      },
+      {
+        "name": "跨境供应链",
+        "hrefUrl": "index.html"
+      },
+      {
+        "name": "运营服务",
+        "hrefUrl": "index.html"
+      },
+      {
+        "name": "跨境物流",
+        "hrefUrl": "index.html"
+      },
+      {
+        "name": "知识产权服务",
+        "hrefUrl": "index.html"
+      },
+      {
+        "name": "学习中心",
+        "hrefUrl": "index.html"
+      }
+    ],
+    "homeBanner": [
+      {
+        "imgSrc": "../assets/images/banner1.jpg"
+      },
+      {
+        "imgSrc": "../assets/images/banner2.jpg"
+      },
+      {
+        "imgSrc": "../assets/images/banner3.jpg"
+      }
+    ],
+    "news": {
+      "title": "最新动态",
+      "subtitle": "News",
+      "list": [
+        {
+          "title": "代购彷徨，《电商法》指路",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q914294E16.jpg"
+        },
+        {
+          "title": "汕头海关开出首份种牛免税进口《征免税证明》",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q9143040320.jpg"
+        },
+        {
+          "title": "《电商法》实施后淘宝代购现关店潮，跨境电商",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q9112Q4612.jpg"
+        },
+        {
+          "title": "郑州海关所属新乡海关优化服务 助力新能源电池",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q914294E16.jpg"
+        },
+        {
+          "title": "关于印发支持实体经济高质量发展的若干政策的",
+          "dateStr": "2020-08-18",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q9143040320.jpg"
+        },
+        {
+          "title": "汕头海关开出首份种牛免税进口《征免税证明》",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q9143040320.jpg"
+        }
+      ]
+    },
+    "information": {
+      "title": "行业新闻",
+      "subtitle": "Information",
+      "list": [
+        {
+          "title": "代购彷徨，《电商法》指路",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q914294E16.jpg"
+        },
+        {
+          "title": "汕头海关开出首份种牛免税进口《征免税证明》",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q9143040320.jpg"
+        },
+        {
+          "title": "《电商法》实施后淘宝代购现关店潮，跨境电商",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q9112Q4612.jpg"
+        },
+        {
+          "title": "郑州海关所属新乡海关优化服务 助力新能源电池",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q914294E16.jpg"
+        },
+        {
+          "title": "关于印发支持实体经济高质量发展的若干政策的",
+          "dateStr": "2020-08-18",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q9143040320.jpg"
+        },
+        {
+          "title": "《电商法》实施后淘宝代购现关店潮，跨境电商",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q9112Q4612.jpg"
+        },
+        {
+          "title": "郑州海关所属新乡海关优化服务 助力新能源电池",
+          "dateStr": "2020-08-21",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q914294E16.jpg"
+        },
+        {
+          "title": "关于印发支持实体经济高质量发展的若干政策的",
+          "dateStr": "2020-08-18",
+          "imgSrc": "http://ecom.uat4pis.com:5588/uploads/200819/1-200Q9143040320.jpg"
+        }
+      ]
+    },
+    "targetList": {
+      "title": "锁定营销目标",
+      "subtitle": "定制化投放方案，高效达成你的各种营销目标",
+      "list": [
+        {
+          "title": "推广品牌活动",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-1-01.png",
+          "imgSrc": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/img-1-01.png",
+          "descript": "整合腾讯、广告主、合作伙伴等多方数据能力，转化数据价值为商业价值"
+        },
+        {
+          "title": "推广门店",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-1-02.png",
+          "imgSrc": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/img-1-02.png",
+          "descript": "整合腾讯、广告主、合作伙伴等多方数据能力，转化数据价值为商业价值"
+        },
+        {
+          "title": "推广应用",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-1-03.png",
+          "imgSrc": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/img-1-03.png",
+          "descript": "整合腾讯、广告主、合作伙伴等多方数据能力，转化数据价值为商业价值"
+        },
+        {
+          "title": "收集销售线索",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-1-04.png",
+          "imgSrc": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/img-1-04.png",
+          "descript": "整合腾讯、广告主、合作伙伴等多方数据能力，转化数据价值为商业价值"
+        },
+        {
+          "title": "推广商品",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-1-05.png",
+          "imgSrc": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/img-1-05.png",
+          "descript": "整合腾讯、广告主、合作伙伴等多方数据能力，转化数据价值为商业价值"
+        },
+        {
+          "title": "派发优惠券",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-1-06.png",
+          "imgSrc": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/img-1-06.png",
+          "descript": "整合腾讯、广告主、合作伙伴等多方数据能力，转化数据价值为商业价值"
+        },
+        {
+          "title": "推广公众号",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-1-07.png",
+          "imgSrc": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/img-1-07.png",
+          "descript": "整合腾讯、广告主、合作伙伴等多方数据能力，转化数据价值为商业价值"
+        },
+        {
+          "title": "推广小程序",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-1-08.png",
+          "imgSrc": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/img-1-08.png",
+          "descript": "整合腾讯、广告主、合作伙伴等多方数据能力，转化数据价值为商业价值"
+        }
+      ]
+    },
+    "releaseList": {
+      "title": "一站式智能投放",
+      "subtitle": "基于腾讯广告先进算法引擎，实现全链路智能投放，助力广告主“智能拓客，高效转化”",
+      "list": [
+        {
+          "title": "数据观察",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-2-01.png",
+          "imgSrc": "https://e.qq.com/images/index/img-1-01.png",
+          "descript": "整合腾讯、广告主、合作伙伴等多方数据能力，转化数据价值为商业价值"
+        },
+        {
+          "title": "智能投手",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-2-02.png",
+          "imgSrc": "https://e.qq.com/images/index/img-1-01.png",
+          "descript": "通过整合平台投放能力及搭建自动投放策略，形成的面向行业和广告主的智能投放解决方案"
+        },
+        {
+          "title": "人群定向",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-2-03.png",
+          "imgSrc": "https://e.qq.com/images/index/img-1-01.png",
+          "descript": "广告主无需手动圈选，系统自动帮助广告主寻找更多目标人群，提高转化"
+        },
+        {
+          "title": "智能出价",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-2-04.png",
+          "imgSrc": "https://e.qq.com/images/index/img-1-01.png",
+          "descript": "实现基于投放目标和出价的效果自动优化，持续提高广告主的广告效率和投入产出比"
+        },
+        {
+          "title": "创意中心",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-2-05.png",
+          "imgSrc": "https://e.qq.com/images/index/img-1-01.png",
+          "descript": "集案例课堂、智能工具、预审分发和高效投放于一体的一站式创意服务平台"
+        },
+        {
+          "title": "诊断优化",
+          "icon": "https://public.gdtimg.com/qzone/biz/gdt/portal/styles/images/index_yc/icon-2-06.png",
+          "imgSrc": "https://e.qq.com/images/index/img-1-01.png",
+          "descript": "系统自动监测广告表现，及时发现广告异动，帮助广告主快速判断需要调整的广告"
+        }
+      ]
+    },
+    "paymentMethods": [
+      {
+        "title": "PayPal",
+        "imgSrc": "../assets/images/paypal.png",
+        "descript": "介绍内容：贝宝是由上海网付易信息技术有限公司与世界领先的网络支付公司—— PayPal [1]  公司通力合作为中国市场量身定做的网络支付服务。贝宝利用 PayPal 公司在电子商务支付领域先进的技术、风险管理与控制以及客户服务等方面的能力。",
+        "hrefUrl": "https://www.paypal.com"
+      },
+      {
+        "title": "信用卡",
+        "imgSrc": "../assets/images/credit.png",
+        "descript": "介绍内容：支持提供搭建Airwallex、asiabilldirect、cardpay、checkout、credit_card、glocash、iPayLinks、oceandirect、oceanpayment、pacypay、photon、shopify_payments、stripe、xbPay、zzepay等十几种国外信用卡使用服务。",
+        "hrefUrl": "https://www.payssion.cn/cn/index.html"
+      },
+      {
+        "title": "Alipay",
+        "imgSrc": "../assets/images/Alipay.png",
+        "descript": "介绍内容：支付年宝是国内的第三方支付平台，致力于为企业和个人提供“简单、安全、快速、便捷”的支付解决方案",
+        "hrefUrl": "https://mobile.alipay.com/"
+      },
+      {
+        "title": "Payssion",
+        "imgSrc": "../assets/images/payssion.png",
+        "descript": "介绍内容：Payssion是一站式全球在线支付提供商，致力于为用户提供'简单、便捷、安全'的跨境收款解决方案，通过Payssion可以一站接入全球300多种本地支付，支持电子钱包、网银转账、预付卡、短信计费等多种支付类型，覆盖欧洲、拉美、中东、东南亚等全球100多个国家和地区",
+        "hrefUrl": "https://www.payssion.cn/cn/index.html"
+      }
+    ],
+    "footer": {
+      "descript": "© 2021 安徽梵歌大数据科技有限公司 版权所有"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务平台-广告推广</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/promotion.css">
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/template.js"></script>
+    <script src="../assets/js/tool.js"></script>
+</head>
+
+<body>
+    <header class="plat-header">
+        <div class="plat-header-logo container">安徽省独立站公共服务平台</div>
+        <div class="plat-header-list" id="platHeader"></div>
+    </header>
+    <section class="plat-section">
+        <div class="plat-section-banner">
+            <img class="banner-img" src="../assets/images/head-background.jpg">
+            <div class="banner-text">
+                <h2 class="title">覆盖海量用户的<br>全域营销平台</h2>
+                <p class="sub">助你轻松实现商业目标</p>
+            </div>
+        </div>
+        <div class="plat-section-target" id="targetList">
+        </div>
+        <div class="plat-section-release" id="releaseList">
+        </div>
+    </section>
+    <footer class="plat-footer" id="platFooter"></footer>
+
+    <script type="text/html" id="targetListTemp">
+        <div class="target-title">
+            <h3 class="title">{{targetList.title}}</h3>
+            <p class="sub">{{targetList.subtitle}}</p>
+        </div>
+        <ul class="target-list">
+            {{ each targetList.list }}
+            {{ if $index % 2 == 1  }}
+            <li class="target-list-item" style="background-image:url({{$value.imgSrc}});">
+                <div class="mask">
+                    <div class="icon-box">
+                        <img src="{{$value.icon}}" alt="icon" class="icon">
+                        <span class="label">{{$value.title}}</span>
+                    </div>
+                    <i class="filter" style="background-image:url({{$value.imgSrc}});"></i>
+                </div>
+            </li>
+            {{ else  }}
+            <li class="target-list-item" style="background-image:url({{$value.imgSrc}});">
+                <div class="mask">
+                    <div class="icon-box">
+                        <img src="{{$value.icon}}" alt="icon" class="icon">
+                        <span class="label">{{$value.title}}</span>
+                    </div>
+                </div>
+            </li>
+            {{ /if }}
+            {{ /each }}
+        </ul>
+    </script>
+
+    <script type="text/html" id="releaseListTemp">
+        <div class="release-title">
+            <h3 class="title">{{releaseList.title}}</h3>
+            <p class="sub">{{releaseList.subtitle}}</p>
+        </div>
+        <ul class="release-list">
+            {{ each releaseList.list }}
+            <li class="release-list-item">
+                <div class="label">
+                    <img src="{{$value.icon}}" alt="icon" class="icon">
+                    <div class="text">{{$value.title}}</div>
+                </div>
+                <div class="value">{{$value.descript}}</div>
+            </li>
+            {{ /each }}
+        </ul>
+        <div class="release-line">
+            <i class="line1"></i>
+            <i class="line2"></i>
+        </div>
+    </script>
+    <script>
+        renders.js(['header', 'promotion'])
+    </script>
+</body>
+
+</html>

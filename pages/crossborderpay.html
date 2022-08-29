@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>服务平台-跨境支付</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/crossborderpay.css">
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/template.js"></script>
+    <script src="../assets/js/tool.js"></script>
+</head>
+
+<body>
+    <header class="plat-header">
+        <div class="plat-header-logo container">安徽省独立站公共服务平台</div>
+        <div class="plat-header-list" id="platHeader"></div>
+    </header>
+    <section class="plat-section">
+        <div class="plat-section-banner">
+            <img class="banner-img" src="../assets/images/pay.png" />
+        </div>
+        <div class="plat-section-list container" id="paymentList"></div>
+    </section>
+    <footer class="plat-footer" id="platFooter"></footer>
+    <script type="text/html" id="paymentListTemp">
+        <ul class="payment-list">
+            {{ each paymentMethods }}
+            <li class="payment-list-item">
+                <a class="item-img" href="{{$value.hrefUrl}}" target="_blank"><img src="{{$value.imgSrc}}" alt="" /></a>
+                <div class="item-text">
+                    <h3 class="title">{{$value.title}}</h3>
+                    <p class="desc">{{$value.descript}}</p>
+                </div>
+            </li>
+            {{ /each }}
+        </ul>
+    </script>
+    <script>
+        renders.js(['header', 'crossborderpay'])
+    </script>
+</body>
+
+</html>

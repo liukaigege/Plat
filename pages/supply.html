@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安徽省独立站公共服务平台-跨境供应链</title>
+  <script src="../assets/js/tool.js"></script>
+  <script>
+    const cssList = ['main','header','supply']
+    renders.css(cssList)
+  </script>
+</head>
+
+<body>
+  <header class="plat-header">
+      <div class="plat-header-logo container">安徽省独立站公共服务平台</div>
+      <div class="plat-header-list" id="platHeader">
+      </div>
+  </header>
+  <img class="supply_image">
+  <div class="container">
+    <!-- 全方位采购数字化 -->
+    <div class="title_container">
+      <h3>全方位采购数字化</h3>
+      <p>构建更合规、更高效、更智能的数字化采购体系</p>
+    </div>
+    <ul class="list_container">
+      
+    </ul>
+  </div>
+  <footer class="plat-footer" id="platFooter"></footer>
+  <script type="text/html" id="supplyTpl">
+		{{each list as v i}}
+      <li style="background: url({{v.image}}) 0 0 / 100% 100% no-repeat;">
+        <h4>{{v.title}}</h4>
+        <p>{{v.content}}</p>
+      </li>
+		{{/each}}
+	</script>
+
+  <script src="../lib/jquery.min.js"></script>
+  <script src="../lib/template.js"></script>
+  <script>
+    const jsList = ['header','supply']
+    renders.js(jsList)   
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务平台-首页</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/template.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="assets/js/tool.js"></script>
+</head>
+
+<body>
+    <header class="plat-header">
+        <div class="plat-header-logo container">安徽省独立站公共服务平台</div>
+        <div class="plat-header-list" id="platHeader">
+        </div>
+    </header>
+    <section class="plat-section">
+        <div class="plat-section-banner swiper" id="sectionBanner"></div>
+        <div class="plat-section-information container">
+            <div class="section-information-item section-news"></div>
+            <div class="section-information-item section-information"></div>
+        </div>
+    </section>
+    <footer class="plat-footer" id="platFooter"></footer>
+
+    <script id="sectionBannerTemp" type="text/html">
+        <div class="swiper-wrapper">
+            {{each homeBanner}}
+            <div class="swiper-slide" style="background-image: url({{$value.imgSrc}})"></div>
+            {{/each}}
+        </div>
+        <div class="swiper-pagination"></div>
+    </script>
+
+    <script id="sectionNews" type="text/html">
+        <div class="title">
+            <h3>{{news.title}}</h3>
+            <p>{{news.subtitle}}</p>
+        </div>
+        <div class="section-news-content">
+            <div class="section-news-left swiper" id="newsSwipper">
+                <div class="swiper-wrapper">
+                    {{each news.list}}
+                    {{ if $index < 5 }}
+                    <div class="swiper-slide">
+                        <img src="{{$value.imgSrc}}" alt="">
+                    </div>
+                    {{ /if }}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="section-news-right">
+                <ul class="dynamic-ul">
+                    {{each news.list}}
+                    <li class="dynamic-li">
+                        <a href=""><span>{{$value.title}}</span><span>{{$value.dateStr}}</span></a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </script>
+
+    <script id="sectionInformation" type="text/html">
+        <div class="title">
+            <h3>{{information.title}}</h3>
+            <p>{{information.subtitle}}</p>
+        </div>
+        <div class="section-information-content">
+            <div class="content-top">
+                {{each information.list}}
+                {{ if $index < 3 }}
+                <div class="news-block">
+                    <a href="">
+                        <figure class="img-figure"><img src="{{$value.imgSrc}}" alt=""></figure>
+                        <p>{{$value.title}}</p>
+                        <input type="button" value="查看详细">
+                    </a>
+                </div>
+                {{ /if }}
+                {{/each}}
+            </div>
+            <ul class="content-bottom">
+                {{each information.list}}
+                <li class="news-li">
+                    <a href=""><span>{{$value.title}}</span><span>{{$value.dateStr}}</span></a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+
+</html>

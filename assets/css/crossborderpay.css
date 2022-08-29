@@ -1,0 +1,38 @@
+@import "./header.css";
+
+.plat-section-banner {
+    height: 400px;
+}
+
+.payment-list {
+    padding: 30px 0;
+}
+
+.payment-list .payment-list-item {
+    display: flex;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.payment-list-item .item-img {
+    width: 270px;
+    height: 170px;
+    margin-right: 20px;
+}
+
+.payment-list-item .item-text {
+    flex: 1;
+}
+
+.item-text .title {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.item-text .desc {
+    font-size: 16px;
+    line-height: 22px;
+    color: #666;
+}

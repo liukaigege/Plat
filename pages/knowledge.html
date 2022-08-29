@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务平台-跨境供应链</title>
+    <script src="../assets/js/tool.js"></script>
+    <script>
+        const cssList = ['main', 'header', 'knowledge']
+        renders.css(cssList)
+    </script>
+</head>
+
+<body>
+    <header class="plat-header">
+        <div class="plat-header-logo container">安徽省独立站公共服务平台</div>
+        <div class="plat-header-list" id="platHeader">
+        </div>
+    </header>
+    <img class="knowledge_image">
+    <div class="container">
+        <!-- 电商知识产权保护-->
+
+        <ul class="list_container">
+
+        </ul>
+    </div>
+    <footer class="plat-footer" id="platFooter"></footer>
+    <script type="text/html" id="knowledgeTpl">
+		{{each list as v i}}
+      <li >
+        <h2>{{v.title}}</h2>
+        <div class="rectangleBottom"></div>
+        <div class="rectangle"></div>
+       <ul class="contentText">
+        {{each v.content as val index}}
+          <li>
+            <h4>{{val.title}}</h4>
+            <p>{{val.text}}</p>
+          </li>
+        {{/each}}
+       </ul>
+      </li>
+		{{/each}}
+	</script>
+
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/template.js"></script>
+    <script>
+        const jsList = ['header', 'knowledge']
+        renders.js(jsList)   
+    </script>
+</body>
+
+</html>

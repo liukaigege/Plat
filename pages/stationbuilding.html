@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务平台-建站服务</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/station-building.css">
+    <link rel="stylesheet" href="../lib/swiper-bundle.min.css">
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/swiper-bundle.min.js"></script>
+    <script src="../assets/js/tool.js"></script>
+</head>
+
+<body>
+    <header class="plat-header">
+        <div class="plat-header-logo container">安徽省独立站公共服务平台</div>
+        <div class="plat-header-list" id="platHeader"></div>
+    </header>
+    <section class="plat-section">
+        <div class="plat-section-banner swiper mb-70" id="sectionBanner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide  banner-input-slider" style="background-image: url('../assets/images/banner3.png')">
+                    <a href="http://vshop.phigogroup.com/home.html" target="_blank"><button class="input-btn">开始免费试用</button></a>
+                </div>
+                <div class="swiper-slide" style="background-image: url('../assets/images/banner1.png')"> </div>
+                <div class="swiper-slide" style="background-image: url('../assets/images/banner2.png')"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <footer class="plat-footer" id="platFooter"></footer>
+    <script>
+        renders.js(['swiper', 'header'])
+    </script>
+    <script>
+        initBanner()
+    </script>
+</body>
+
+</html>

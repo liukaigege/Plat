@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安徽省独立站公共服务平台-跨境物流</title>
+  <script src="../assets/js/tool.js"></script>
+  <script>
+    const cssList = ['main', 'header', 'logisticsdetail']
+    renders.css(cssList)
+  </script>
+</head>
+
+<body>
+  <header class="plat-header">
+      <div class="plat-header-logo container">安徽省独立站公共服务平台</div>
+      <div class="plat-header-list" id="platHeader">
+      </div>
+  </header>
+  <div class="container logisticsdetail_container">
+    <h1 class="title_container"></h1>
+    <h3 class="tips_container"></h3>
+    <div class="text_content"></div>
+  </div>
+  <footer class="plat-footer" id="platFooter"></footer>
+  <script src="../lib/jquery.min.js"></script>
+  <script>
+    const jsList = ['header', 'logisticsdetail']
+    renders.js(jsList)   
+  </script>
+</body>
+
+</html>

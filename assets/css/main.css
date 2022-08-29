@@ -1,0 +1,197 @@
+:root {
+    --normal-bg: #ffffff;
+    --normal-color: #0b8be6;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+form,
+div,
+article,
+dialog,
+dl,
+dd,
+figure {
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+body {
+    font-size: 16px;
+    color: #000000;
+    background-color: var(--normal-bg);
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+    margin: 0;
+}
+
+i,
+b {
+    font-style: normal;
+    font-weight: normal;
+}
+
+em {
+    font-style: oblique;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:link,
+a:focus {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+a:hover,
+a:hover * {
+    color: var(--normal-color);
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    border: 0;
+    object-fit: cover;
+    user-select: none;
+}
+
+video {
+    outline: 0;
+}
+
+textarea:focus {
+    border: 1px solid var(--normal-color);
+}
+
+/*去除在Chrome中type=number的input输入框中的上下小箭头*/
+input[type=number] {
+    -moz-appearance: textfield
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #999;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+input,
+textarea,
+input:focus-visible,
+textarea:focus-visible {
+    outline: none;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #999;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #999;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+input {
+    padding-left: 15px;
+}
+
+textarea {
+    padding: 15px;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.re {
+    position: relative;
+}
+
+.ab {
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+/* 版心 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安徽省独立站公共服务平台-运营服务</title>
+  <script src="../assets/js/tool.js"></script>
+  <script>
+    const cssList = ['main','header','operate']
+    renders.css(cssList)
+  </script>
+</head>
+
+<body>
+  <header class="plat-header">
+      <div class="plat-header-logo container">安徽省独立站公共服务平台</div>
+      <div class="plat-header-list" id="platHeader">
+      </div>
+  </header>
+  <img class="operate_image">
+  <div class="container">
+    <div class="title_container">
+      <h3>盟耀运营解决方案</h3>
+      <div><span class="gradientClass"></span></div>
+      <p>一站式微信托管式运营服务，帮你走出营销困境</p>
+    </div>
+    <ul class="list_container"></ul>
+  </div>
+  <footer class="plat-footer" id="platFooter"></footer>
+  <script type="text/html" id="operateTpl">
+		{{each list as v i}}
+      <li>
+        <img src="{{v.image}}" alt="">
+        <h4>{{v.title}}</h4>
+        <div><span class="gradientClass"></span></div>
+        <p>{{v.content}}</p>
+      </li>
+		{{/each}}
+	</script>
+
+  <script src="../lib/jquery.min.js"></script>
+  <script src="../lib/template.js"></script>
+  <script>
+    const jsList = ['header','operate']
+    renders.js(jsList)   
+  </script>
+</body>
+
+</html>
